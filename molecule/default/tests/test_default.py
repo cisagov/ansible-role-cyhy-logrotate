@@ -17,8 +17,8 @@ def test_packages(host, pkg):
 
 
 @pytest.mark.parametrize('file,content', [
-    ('/etc/logrotate.conf', 'compress'),
-    ('/etc/logrotate.d/cyhy', '/var/log/cyhy')
+    ('/etc/logrotate.conf', '^compress'),
+    ('/etc/logrotate.d/cyhy', '^/var/log/cyhy')
 ])
 def test_files(host, file, content):
     f = host.file(file)
