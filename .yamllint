@@ -8,6 +8,6 @@ rules:
     max-spaces-inside: 1
     level: error
   line-length: disable
-  # NOTE(retr0h): Templates no longer fail this lint rule.
-  #               Uncomment if running old Molecule templates.
-  # truthy: disable
+  # yamllint doesn't like when we use yes and no for true and false,
+  # but that's pretty standard in Ansible.
+  truthy: disable
