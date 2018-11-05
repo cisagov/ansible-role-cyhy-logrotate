@@ -1,0 +1,20 @@
+---
+galaxy_info:
+  author: Shane Frasier
+  description: Configure logrotate for Cyber Hygiene hosts
+  company: DHS NCATS
+  license: CC0
+  min_ansible_version: 2.0
+  platforms:
+    - name: Debian
+      versions:
+        - jessie
+        - stretch
+    - name: Amazon
+      versions:
+        - 2018.03
+  galaxy_tags:
+    - logrotate
+    - cyhy
+
+dependencies: []
