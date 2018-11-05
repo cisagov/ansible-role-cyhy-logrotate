@@ -17,6 +17,10 @@ def test_packages(host, pkg):
 
 
 @pytest.mark.parametrize('file,content', [
+    ('/etc/logrotate.conf', '^# rotate log files daily'),
+    ('/etc/logrotate.conf', '^daily'),
+    ('/etc/logrotate.conf', '^# keep 30 days worth of backlogs'),
+    ('/etc/logrotate.conf', '^rotate 30'),
     ('/etc/logrotate.conf', '^compress'),
     ('/etc/logrotate.d/cyhy', '^/var/log/cyhy')
 ])
