@@ -1,12 +1,14 @@
 # ansible-role-cyhy-logrotate :ferris_wheel: #
 
-An Ansible role for configuring
+An Ansible role for installing and configuring
 [`logrotate`](https://github.com/logrotate/logrotate) for Cyber
 Hygiene hosts.
 
 ## Requirements ##
 
-None.
+This role uses the `package` Ansible module, so [its
+requirements](https://docs.ansible.com/ansible/latest/modules/package_module.html#requirements)
+apply.
 
 ## Role Variables ##
 

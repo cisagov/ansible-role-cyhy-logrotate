@@ -1,6 +1,10 @@
 ---
 # tasks file for cyhy_logrotate
 
+- name: Install logrotate
+  package:
+    name: logrotate
+
 - name: Turn on compression globally for rotated logs
   lineinfile:
     dest: /etc/logrotate.conf
