@@ -29,6 +29,26 @@
     - regex: '^#compress'
       line: compress
 
+# Amazon Linux (Red Hat) stores similar configuration information in
+# /etc/logrotate.d/syslog, but there the files are already rotated
+# daily.
+- name: Modify rsyslog configuration
+  lineinfile:
+    dest: /etc/logrotate.d/rsyslog
+    regexp: "{{item.regex}}"
+    state: present
+    line: "{{item.line}}"
+    backrefs: yes
+  loop:
+    # Rotate log files daily
+    - regex: '\s*weekly'
+      line: '\tdaily'
+    # Keep seven days worth of logs
+    - regex: '\s*rotate'
+      line: '\trotate 7'
+  when:
+    - ansible_os_family == "Debian"
+
 - name: Install cyhy-specific logrotate configuration
   copy:
     src: cyhy

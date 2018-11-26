@@ -29,3 +29,15 @@ def test_files(host, file, content):
 
     assert f.exists
     assert f.contains(content)
+
+
+@pytest.mark.parametrize('file,content', [
+    ('/etc/logrotate.d/rsyslog', '^\s*daily'),
+    ('/etc/logrotate.d/rsyslog', '^\s*rotate 7'),
+])
+def test_rsyslog_file(host, file, content):
+    f = host.file(file)
+
+    # The file only exists on Debian systems
+    if f.exists:
+        assert f.contains(content)
