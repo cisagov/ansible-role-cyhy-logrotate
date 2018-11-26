@@ -29,7 +29,7 @@
     - regex: '^#compress'
       line: compress
 
-# Redhat stores similar configuration information in
+# Amazon Linux (Red Hat) stores similar configuration information in
 # /etc/logrotate.d/syslog, but there the files are already rotated
 # daily.
 - name: Modify rsyslog configuration
