@@ -1,0 +1,3 @@
+---
+- src: https://github.com/dhs-ncats/ansible-role-logrotate
+  name: logrotate
