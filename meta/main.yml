@@ -17,4 +17,6 @@ galaxy_info:
     - logrotate
     - cyhy
 
-dependencies: []
+dependencies:
+  - src: https://github.com/dhs-ncats/ansible-role-logrotate
+    name: logrotate
