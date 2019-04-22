@@ -1,4 +1,8 @@
-# ansible-role-cyhy-logrotate :ferris_wheel: #
+# ansible-role-cyhy-logrotate #
+
+[![Build Status](https://travis-ci.com/cisagov/ansible-role-cyhy-logrotate.svg?branch=develop)](https://travis-ci.com/cisagov/ansible-role-cyhy-logrotate)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/cisagov/ansible-role-cyhy-logrotate.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/cisagov/ansible-role-cyhy-logrotate/alerts/)
+[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/cisagov/ansible-role-cyhy-logrotate.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/cisagov/ansible-role-cyhy-logrotate/context:python)
 
 An Ansible role for installing and configuring
 [`logrotate`](https://github.com/logrotate/logrotate) for Cyber
@@ -22,11 +26,18 @@ None.
 
 Here's how to use it in a playbook:
 
-    - hosts: all
-      become: yes
-      become_method: sudo
-      roles:
-         - cyhy_logrotate
+```yaml
+- hosts: all
+  become: yes
+  become_method: sudo
+  roles:
+    - cyhy_logrotate
+```
+
+## Contributing ##
+
+We welcome contributions!  Please see [here](CONTRIBUTING.md) for
+details.
 
 ## License ##
 
