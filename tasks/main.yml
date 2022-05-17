@@ -1,8 +1,6 @@
 ---
-# tasks file for cyhy_logrotate
-
 - name: Install cyhy-specific logrotate configuration
-  copy:
-    src: cyhy
+  ansible.builtin.copy:
     dest: /etc/logrotate.d/cyhy
     mode: 0644
+    src: cyhy

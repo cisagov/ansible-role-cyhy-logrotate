@@ -1,0 +1,7 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - name: Include ansible-role-cyhy-logrotate
+      ansible.builtin.include_role:
+        name: ansible-role-cyhy-logrotate

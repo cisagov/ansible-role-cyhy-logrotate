@@ -1,6 +1,6 @@
 # ansible-role-cyhy-logrotate #
 
-[![Build Status](https://travis-ci.com/cisagov/ansible-role-cyhy-logrotate.svg?branch=develop)](https://travis-ci.com/cisagov/ansible-role-cyhy-logrotate)
+[![GitHub Build Status](https://github.com/cisagov/ansible-role-cyhy-logrotate/workflows/build/badge.svg)](https://github.com/cisagov/ansible-role-cyhy-logrotate/actions)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/cisagov/ansible-role-cyhy-logrotate.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/cisagov/ansible-role-cyhy-logrotate/alerts/)
 [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/cisagov/ansible-role-cyhy-logrotate.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/cisagov/ansible-role-cyhy-logrotate/context:python)
 
@@ -17,6 +17,13 @@ apply.
 ## Role Variables ##
 
 None.
+
+<!--
+| Variable | Description | Default | Required |
+|----------|-------------|---------|----------|
+| optional_variable | Describe its purpose. | `default_value` | No |
+| required_variable | Describe its purpose. | n/a | Yes |
+-->
 
 ## Dependencies ##
 
@@ -36,12 +43,12 @@ Here's how to use it in a playbook:
 
 ## Contributing ##
 
-We welcome contributions!  Please see [here](CONTRIBUTING.md) for
+We welcome contributions!  Please see [`CONTRIBUTING.md`](CONTRIBUTING.md) for
 details.
 
 ## License ##
 
-This project is in the worldwide [public domain](LICENSE.md).
+This project is in the worldwide [public domain](LICENSE).
 
 This project is in the public domain within the United States, and
 copyright and related rights in the work worldwide are waived through
