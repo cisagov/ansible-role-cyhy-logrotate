@@ -1,5 +1,5 @@
 ---
-- src: https://github.com/dhs-ncats/ansible-role-logrotate
+- src: https://github.com/cisagov/ansible-role-logrotate
   name: logrotate
 - src: https://github.com/cisagov/ansible-role-pip
   name: pip
