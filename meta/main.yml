@@ -1,8 +1,11 @@
 ---
+dependencies:
+  - src: https://github.com/cisagov/ansible-role-logrotate
+    name: logrotate
 galaxy_info:
   author: Shane Frasier
-  description: Configure logrotate for Cyber Hygiene hosts
   company: CISA Cyber Assessments
+  description: Configure logrotate for Cyber Hygiene hosts
   galaxy_tags:
     - cyhy
     - logrotate
@@ -29,7 +32,6 @@ galaxy_info:
         - bookworm
     - name: Fedora
       versions:
-        - "35"
         - "36"
         - "37"
     - name: Ubuntu
@@ -38,7 +40,3 @@ galaxy_info:
         - focal
         - jammy
   role_name: cyhy_logrotate
-
-dependencies:
-  - src: https://github.com/cisagov/ansible-role-logrotate
-    name: logrotate
