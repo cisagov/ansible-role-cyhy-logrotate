@@ -2,5 +2,5 @@
 - name: Install cyhy-specific logrotate configuration
   ansible.builtin.copy:
     dest: /etc/logrotate.d/cyhy
-    mode: 0644
+    mode: u=rw,g=r,o=r
     src: cyhy
