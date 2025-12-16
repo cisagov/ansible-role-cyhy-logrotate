@@ -1,6 +1,7 @@
 # ansible-role-cyhy-logrotate #
 
 [![GitHub Build Status](https://github.com/cisagov/ansible-role-cyhy-logrotate/workflows/build/badge.svg)](https://github.com/cisagov/ansible-role-cyhy-logrotate/actions)
+[![License](https://img.shields.io/github/license/cisagov/ansible-role-cyhy-logrotate)](https://spdx.org/licenses/)
 [![CodeQL](https://github.com/cisagov/ansible-role-cyhy-logrotate/workflows/CodeQL/badge.svg)](https://github.com/cisagov/ansible-role-cyhy-logrotate/actions/workflows/codeql-analysis.yml)
 
 An Ansible role for installing and configuring
