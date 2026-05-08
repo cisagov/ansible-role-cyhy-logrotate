@@ -16,14 +16,10 @@ apply.
 
 ## Role Variables ##
 
-None.
-
-<!--
 | Variable | Description | Default | Required |
 | -------- | ----------- | ------- | -------- |
-| optional_variable | Describe its purpose. | `default_value` | No |
-| required_variable | Describe its purpose. | n/a | Yes |
--->
+| cyhy_logrotate_log_group | The group to use in the logrotate configuration. | `cyhy` | No |
+| cyhy_logrotate_log_username | The username to use in the logrotate configuration. | `cyhy` | No |
 
 ## Dependencies ##
 

@@ -20,10 +20,13 @@ def test_packages(host, pkg):
     assert package.is_installed
 
 
-@pytest.mark.parametrize("file,content", [("/etc/logrotate.d/cyhy", "^/var/log/cyhy")])
+@pytest.mark.parametrize(
+    "file,content", [("/etc/logrotate.d/cyhy", ["^/var/log/cyhy", r"^\s*su cyhy cyhy"])]
+)
 def test_files(host, file, content):
     """Test that config files were modified as expected."""
     f = host.file(file)
 
     assert f.exists
-    assert f.contains(content)
+    for c in content:
+        assert f.contains(c)
