@@ -21,7 +21,8 @@ def test_packages(host, pkg):
 
 
 @pytest.mark.parametrize(
-    "file,content", [("/etc/logrotate.d/cyhy", ["^/var/log/cyhy", r"^\s*su cyhy cyhy"])]
+    "file,content",
+    [("/etc/logrotate.d/cyhy", [r"^/var/log/cyhy", r"^\s*su cyhy cyhy"])],
 )
 def test_files(host, file, content):
     """Test that config files were modified as expected."""
