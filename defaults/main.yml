@@ -1,0 +1,6 @@
+---
+# The group to use in the logrotate configuration
+cyhy_logrotate_log_group: cyhy
+
+# The user to use in the logrotate configuration
+cyhy_logrotate_log_username: cyhy
